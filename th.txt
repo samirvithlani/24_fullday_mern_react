@@ -30,3 +30,5 @@ if by mitstake you create file name with small dont rename it..
 
 if export const --> {import}
 if export default --> without {}
+
+style in react :- inline ,external css
