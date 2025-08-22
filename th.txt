@@ -1,0 +1,32 @@
+React js single page application:
+.html -- index.html
+
+----------------------------------
+
+AMAZONE
+navbar
+products
+cart
+user login
+...
+functions --> functions -->diff --> Components
+
+custome compo:
+1)functional     : 16.x
+2)class component:
+
+1)function keyword
+2)arrow function
+
+
+component naming convention:
+component name starts with cap
+User
+UserDetail
+
+export ---> immport/
+
+if by mitstake you create file name with small dont rename it..
+
+if export const --> {import}
+if export default --> without {}
