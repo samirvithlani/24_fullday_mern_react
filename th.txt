@@ -36,3 +36,19 @@ style in react :- inline ,external css
 
 forEach : void
 map     : new array
+
+
+MapDemo4 :
+
+get book data
+id name releseyear ratings author price
+
+relaese year is 2025 --> current year
+relaese year is 2024 --> previous year
+relaese year is 2026 --> next year
+
+price range -- [1000-1500] -> red --> high price
+price range -- [500-100] -> red --> yellow price
+
+rating >4 highly recomnded..
+rating <2 message

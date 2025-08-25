@@ -7,6 +7,7 @@ import HeaderComponent from './components/HeaderComponent'
 import { FooterComponent } from './components/FooterComponent'
 import { MapDemo1 } from './components/MapDemo1'
 import { MapDemo2 } from './components/MapDemo2'
+import { MapDemo3 } from './components/MapDemo3'
 
 function App() {
 
@@ -14,7 +15,8 @@ function App() {
     <div>
       <HeaderComponent></HeaderComponent>
       {/* <MapDemo1></MapDemo1> */}
-      <MapDemo2></MapDemo2>
+      {/* <MapDemo2></MapDemo2> */}
+      <MapDemo3></MapDemo3>
       {/* <ContentComponent></ContentComponent>
       <FooterComponent></FooterComponent> */}
     </div>
