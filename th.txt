@@ -52,3 +52,42 @@ price range -- [500-100] -> red --> yellow price
 
 rating >4 highly recomnded..
 rating <2 message
+
+
+relation between components
+
+app -->Header
+parent --> child
+
+data transfer bw components:
+
+props: property
+parent -->child --->
+
+APP.js--> User.jsx -->UserList
+Parent -->Child --> child
+          parent --> child
+
+          Users -->[] ->UserList -->map
+
+function calling... --Users
+
+context
+redux
+
+
+27/08/2025
+implmetion flow:
+App --> title --> Header print
+create COmponent -- Users,UserList
+
+App -->Users -- apptitle = {title}
+
+Users --> UserList
+create an array inside Users --> send to -- UserList as props
+UserList -- map
+
+create function test inside Users -->
+button onclick event -- call 2 ways
+
+send that function to child(UserList) -->call that function from child..

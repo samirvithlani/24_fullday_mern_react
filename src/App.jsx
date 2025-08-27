@@ -8,17 +8,16 @@ import { FooterComponent } from './components/FooterComponent'
 import { MapDemo1 } from './components/MapDemo1'
 import { MapDemo2 } from './components/MapDemo2'
 import { MapDemo3 } from './components/MapDemo3'
+import { Users } from './components/Users'
 
 function App() {
 
+  var title = "REACT JS"
+
   return (
     <div>
-      <HeaderComponent></HeaderComponent>
-      {/* <MapDemo1></MapDemo1> */}
-      {/* <MapDemo2></MapDemo2> */}
-      <MapDemo3></MapDemo3>
-      {/* <ContentComponent></ContentComponent>
-      <FooterComponent></FooterComponent> */}
+      <HeaderComponent title = {title}></HeaderComponent>     
+      <Users apptitle = {title}></Users>
     </div>
   )
 }
