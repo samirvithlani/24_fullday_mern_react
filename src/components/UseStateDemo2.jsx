@@ -1,5 +1,8 @@
 import React, { useState } from 'react'
 
+
+//const [x, setx] = useState(0)
+//Invalid hook call. Hooks can only be called inside of the body of a function component.
 export const UseStateDemo2 = () => {
     const [isLoading, setisLoading] = useState(true) // boolean
     var random  =Math.floor(Math.random()*10000)
