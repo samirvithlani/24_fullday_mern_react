@@ -9,6 +9,9 @@ import { MapDemo1 } from './components/MapDemo1'
 import { MapDemo2 } from './components/MapDemo2'
 import { MapDemo3 } from './components/MapDemo3'
 import { Users } from './components/Users'
+import { UseStateDemo } from './components/UseStateDemo'
+import { UseStateDemo2 } from './components/UseStateDemo2'
+import { UseStateDemo3 } from './components/UseStateDemo3'
 
 function App() {
 
@@ -17,7 +20,9 @@ function App() {
   return (
     <div>
       <HeaderComponent title = {title}></HeaderComponent>     
-      <Users apptitle = {title}></Users>
+      {/* <UseStateDemo></UseStateDemo> */}
+      <UseStateDemo2></UseStateDemo2>
+      {/* <UseStateDemo3></UseStateDemo3> */}
     </div>
   )
 }

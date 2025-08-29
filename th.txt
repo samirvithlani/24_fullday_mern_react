@@ -91,3 +91,22 @@ create function test inside Users -->
 button onclick event -- call 2 ways
 
 send that function to child(UserList) -->call that function from child..
+
+
+
+DOM: document object model
+document.createElement("h1") --> DOM object update..
+Virtual dom: it is copy of original dom
+Reserch task : dom
+browser : vdom -->og dom compare-->
+----------------------------------------------
+hook: life cycle / builtin function hook
+functional based:
+all hook name starts with use
+
+1)useState : it is globle state of your variable which will refect of vdom as well og dom:
+
+
+state variable -->chanbges --> component re redner
+
+
