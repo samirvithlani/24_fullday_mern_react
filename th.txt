@@ -110,3 +110,26 @@ all hook name starts with use
 state variable -->chanbges --> component re redner
 
 
+
+
+test(no param)
+
+
+onclick = {test}
+onclick = {()=>{}}
+--------------------------------------------
+implmentation : 01/09/2025
+
+Create Component named Students --> create useState array --3
+Create Componanr named StudentList --> make parent child realtion
+pass student array in props
+iterate using map -->table...
+
+
+creta function for info in parent componet  pass id in param
+call that function from child --> implemnt find functionlty inside
+
+creta function for delete in parent componet  pass id in param
+call that function from child --> implemnt filter
+
+------->do same for employee and doctor

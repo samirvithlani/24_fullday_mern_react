@@ -12,6 +12,7 @@ import { Users } from './components/Users'
 import { UseStateDemo } from './components/UseStateDemo'
 import { UseStateDemo2 } from './components/UseStateDemo2'
 import { UseStateDemo3 } from './components/UseStateDemo3'
+import { Students } from './components/Students'
 
 function App() {
 
@@ -20,9 +21,7 @@ function App() {
   return (
     <div>
       <HeaderComponent title = {title}></HeaderComponent>     
-      {/* <UseStateDemo></UseStateDemo> */}
-      <UseStateDemo2></UseStateDemo2>
-      {/* <UseStateDemo3></UseStateDemo3> */}
+      <Students></Students>
     </div>
   )
 }
