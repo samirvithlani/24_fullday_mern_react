@@ -133,3 +133,33 @@ creta function for delete in parent componet  pass id in param
 call that function from child --> implemnt filter
 
 ------->do same for employee and doctor
+--------------------------------------------------------------
+Component:
+Navbar: LINK
+<a href =aboutus.html">aboutus
+SINGLE PAGE application: page should not reload
+Component Call:
+AboutUs --> a=bout us
+-->URL -->address
+
+React Routing:
+react-router-dom
+
+<BroweserRouter></> :-> it enable routing in your react applicaton
+Child......
+<Routes>
+
+    <Route></>
+    <Route>
+    <Route>
+    <Route>
+    <Route>
+    <Route>
+    <Route>
+
+</>
+
+Navbar
+  -->home
+  -->shows
+  -->movies

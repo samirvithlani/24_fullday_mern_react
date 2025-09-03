@@ -13,15 +13,26 @@ import { UseStateDemo } from './components/UseStateDemo'
 import { UseStateDemo2 } from './components/UseStateDemo2'
 import { UseStateDemo3 } from './components/UseStateDemo3'
 import { Students } from './components/Students'
+import { Navbar } from './components/Navbar'
+import { Route, Routes } from 'react-router-dom'
+import { NetflixHome } from './components/Netflix/NetflixHome'
+import { NetflixMovies } from './components/Netflix/NetflixMovies'
+import { Erorr404 } from './components/Erorr404'
 
 function App() {
 
   var title = "REACT JS"
 
   return (
-    <div>
-      <HeaderComponent title = {title}></HeaderComponent>     
-      <Students></Students>
+    <div style={{textAlign:"center"}}>
+        <Navbar></Navbar>
+        <Routes>
+            <Route path='/' element = {<Students/>}></Route>
+            <Route path="/netflixhome" element ={<NetflixHome/>}></Route>
+            <Route path='/netflixmovies' element = {<NetflixMovies/>}></Route>
+            {/* <Route path='/*' element = {<h2>NO FOUND</h2>}></Route> */}
+            <Route path='/*' element = {<Erorr404/>}></Route>
+        </Routes> 
     </div>
   )
 }
