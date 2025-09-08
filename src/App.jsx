@@ -20,6 +20,7 @@ import { NetflixMovies } from './components/Netflix/NetflixMovies'
 import { Erorr404 } from './components/Erorr404'
 import { WatchContent } from './components/Netflix/WatchContent'
 import { NetflixShows } from './components/Netflix/NetflixShows'
+import { InputHandlinfDemo1 } from './components/inputhandling/InputHandlinfDemo1'
 
 function App() {
 
@@ -34,6 +35,7 @@ function App() {
             <Route path='/netflixmovies' element = {<NetflixMovies/>}></Route>
             <Route path='/netflixshows' element = {<NetflixShows/>}></Route>
             <Route path='/watch/:name' element = {<WatchContent/>}></Route>
+            <Route path='/inputdemo1' element = {<InputHandlinfDemo1/>}></Route>
             {/* <Route path='/*' element = {<h2>NO FOUND</h2>}></Route> */}
             <Route path='/*' element = {<Erorr404/>}></Route>
         </Routes> 
