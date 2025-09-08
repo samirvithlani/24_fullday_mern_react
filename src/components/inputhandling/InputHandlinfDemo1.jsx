@@ -6,6 +6,7 @@ export const InputHandlinfDemo1 = () => {
     const [email, setemail] = useState("")
     const [city, setcity] = useState("")
     const [isSubbmited, setisSubbmited] = useState(false)
+    const [color, setcolor] = useState("black")
 
     const nameHandler = (event)=>{
         console.log(event)
@@ -39,13 +40,17 @@ export const InputHandlinfDemo1 = () => {
             <input type='text' onChange={(event)=>{setcity(event.target.value)}}></input>
             {/* {city} */}
         </div>
+        <div>
+            <label>CHOOSE COLOR</label>
+            <input type='color' onChange={(event)=>{setcolor(event.target.value)}}></input>
+        </div>
 
         <div>
             <button onClick={submitHandler}>SUBMIT</button>
         </div>
 
 {
-    isSubbmited == true && <div>
+    isSubbmited == true && <div style={{color:color}}>
             <h1>OUTPUT</h1>
             <h3>NAME = {name}</h3>
             <h4>EMAIL = {email}</h4>

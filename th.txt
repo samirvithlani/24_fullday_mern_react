@@ -163,3 +163,14 @@ Navbar
   -->home
   -->shows
   -->movies
+
+TSAK:
+create depedent dropdown
+country
+state 
+
+if user select india next dropdown has only indian state
+
+hint:declate proper json array with state and country: filter or find function
+onChage event:
+dont use gpt i know all response..
