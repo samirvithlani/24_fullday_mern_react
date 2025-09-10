@@ -174,3 +174,16 @@ if user select india next dropdown has only indian state
 hint:declate proper json array with state and country: filter or find function
 onChage event:
 dont use gpt i know all response..
+
+react hook form : hookBased useForm
+Formik: COmponent based
+
+handleSubmit(submithandler)
+
+
+
+handleSubmit(cb){
+
+  cb({process dtaa...})
+
+}

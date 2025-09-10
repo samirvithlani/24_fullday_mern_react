@@ -8,6 +8,8 @@ export const InputHandlinfDemo1 = () => {
     const [isSubbmited, setisSubbmited] = useState(false)
     const [color, setcolor] = useState("black")
 
+    //object useState
+    
     const nameHandler = (event)=>{
         console.log(event)
         console.log(event.target.value)
