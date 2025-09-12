@@ -187,3 +187,19 @@ handleSubmit(cb){
   cb({process dtaa...})
 
 }
+
+{
+  required:
+  {
+    value:true,message:"name is required*"
+  }
+}
+
+
+{
+            required:
+            {
+                value:true,
+                message:"email is required"
+            }
+}
