@@ -23,6 +23,7 @@ import { NetflixShows } from './components/Netflix/NetflixShows'
 import { InputHandlinfDemo1 } from './components/inputhandling/InputHandlinfDemo1'
 import { FormDemo1 } from './components/forms/FormDemo1'
 import { FormDemo2 } from './components/forms/FormDemo2'
+import { FormDemo3 } from './components/forms/FormDemo3'
 
 function App() {
 
@@ -40,6 +41,7 @@ function App() {
             <Route path='/inputdemo1' element = {<InputHandlinfDemo1/>}></Route>
             <Route path='/formdemo1' element = {<FormDemo1/>}></Route>
             <Route path='/formdemo2' element = {<FormDemo2/>}></Route>
+            <Route path='/formdemo3'element={<FormDemo3></FormDemo3>}></Route>
 
             {/* <Route path='/*' element = {<h2>NO FOUND</h2>}></Route> */}
             <Route path='/*' element = {<Erorr404/>}></Route>
