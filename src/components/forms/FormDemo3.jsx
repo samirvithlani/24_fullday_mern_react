@@ -1,5 +1,6 @@
 import React from 'react'
 import { useForm } from 'react-hook-form'
+import { MyButton } from '../common/MyButton'
 
 export const FormDemo3 = () => {
     const  {register,handleSubmit,formState:{errors}}=useForm()
@@ -48,6 +49,7 @@ export const FormDemo3 = () => {
   return (
     <div>
         <h1>FORM DEMO 3 (pattern,validate)</h1>
+        <MyButton></MyButton>
         <form onSubmit={handleSubmit(submitHandler)}>
             <div>
                 <label>CONTACT</label>

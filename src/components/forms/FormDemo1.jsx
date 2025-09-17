@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
+import { MyButton } from "../common/MyButton";
 
 export const FormDemo1 = () => {
   //react-hook-form
@@ -18,6 +19,7 @@ export const FormDemo1 = () => {
   return (
     <div>
       <h1>FORM DEMO 1</h1>
+      <MyButton name="form"></MyButton>
       <form onSubmit={handleSubmit(submitHandler)}>
         <div>
           <label>NAME</label>

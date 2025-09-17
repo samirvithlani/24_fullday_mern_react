@@ -203,3 +203,25 @@ handleSubmit(cb){
                 message:"email is required"
             }
 }
+
+-----------------------------------
+reusbale table:
+
+MyTable:
+columns: array -- loop
+rows : array loop
+
+
+A -- UserList --> coln -- id,username,userage
+B --->ADMIN   --> id,adminname,adminage..
+c --> spending list
+
+<table>
+<thead>
+  {
+    props.columns.map((col)=>{
+      return<th>{col}</th>
+    })
+  }
+</>
+</table>

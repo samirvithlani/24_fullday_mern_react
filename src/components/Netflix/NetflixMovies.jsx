@@ -1,10 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { MyButton } from "../common/MyButton";
 
 export const NetflixMovies = () => {
+  const movies  = ()=>{
+    alert("movies....")
+  }
   return (
     <div>
       <h1>NetflixMovies</h1>
+      <MyButton name="movies" funName = {movies}></MyButton>
       <div className="container">
         <div className="row">
           <div className="card" style={{ height: "30vh", textAlign: "center" }}>
