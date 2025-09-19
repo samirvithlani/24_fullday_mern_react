@@ -25,6 +25,8 @@ import { FormDemo1 } from './components/forms/FormDemo1'
 import { FormDemo2 } from './components/forms/FormDemo2'
 import { FormDemo3 } from './components/forms/FormDemo3'
 import { FormDemo4 } from './components/forms/FormDemo4'
+import { BookList } from './components/BookList'
+import { MobileList } from './components/MobileList'
 
 function App() {
 
@@ -44,6 +46,8 @@ function App() {
             <Route path='/formdemo2' element = {<FormDemo2/>}></Route>
             <Route path='/formdemo3'element={<FormDemo3></FormDemo3>}></Route>
             <Route path='/formdemo4' element = {<FormDemo4/>}></Route>
+            <Route path='/booklist' element = {<BookList/>}></Route>
+            <Route path='/mobilelist' element ={<MobileList/>}></Route>
 
 
             {/* <Route path='/*' element = {<h2>NO FOUND</h2>}></Route> */}

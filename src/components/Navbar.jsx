@@ -58,6 +58,19 @@ export const Navbar = () => {
               </Link>
             </li>    
             
+            <li class="nav-item active">
+               <Link class="nav-link" to="booklist">
+                booklist
+              </Link>
+            </li>   
+            
+
+            <li class="nav-item active">
+               <Link class="nav-link" to="mobilelist">
+                mobilelist
+              </Link>
+            </li>   
+            
           </ul>
         </div>
       </nav>
