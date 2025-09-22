@@ -27,6 +27,8 @@ import { FormDemo3 } from './components/forms/FormDemo3'
 import { FormDemo4 } from './components/forms/FormDemo4'
 import { BookList } from './components/BookList'
 import { MobileList } from './components/MobileList'
+import { DynamicForm } from './components/forms/DynamicForm'
+import { DynamicFrorm2 } from './components/forms/DynamicFrorm2'
 
 function App() {
 
@@ -48,6 +50,8 @@ function App() {
             <Route path='/formdemo4' element = {<FormDemo4/>}></Route>
             <Route path='/booklist' element = {<BookList/>}></Route>
             <Route path='/mobilelist' element ={<MobileList/>}></Route>
+            <Route path='/dynamicform' element = {<DynamicFrorm2/>}></Route>
+
 
 
             {/* <Route path='/*' element = {<h2>NO FOUND</h2>}></Route> */}

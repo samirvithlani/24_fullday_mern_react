@@ -70,6 +70,12 @@ export const Navbar = () => {
                 mobilelist
               </Link>
             </li>   
+            <li class="nav-item active">
+               <Link class="nav-link" to="dynamicform">
+                dynamicform
+              </Link>
+            </li>   
+            
             
           </ul>
         </div>
