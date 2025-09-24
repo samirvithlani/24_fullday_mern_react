@@ -75,6 +75,12 @@ export const Navbar = () => {
                 dynamicform
               </Link>
             </li>   
+            <li class="nav-item active">
+               <Link class="nav-link" to="expense">
+                expense
+              </Link>
+            </li>   
+
             
             
           </ul>

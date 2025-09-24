@@ -29,6 +29,7 @@ import { BookList } from './components/BookList'
 import { MobileList } from './components/MobileList'
 import { DynamicForm } from './components/forms/DynamicForm'
 import { DynamicFrorm2 } from './components/forms/DynamicFrorm2'
+import { Expense } from './components/Expense'
 
 function App() {
 
@@ -51,6 +52,7 @@ function App() {
             <Route path='/booklist' element = {<BookList/>}></Route>
             <Route path='/mobilelist' element ={<MobileList/>}></Route>
             <Route path='/dynamicform' element = {<DynamicFrorm2/>}></Route>
+            <Route path='/expense' element = {<Expense/>}></Route>
 
 
 
