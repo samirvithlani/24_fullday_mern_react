@@ -79,7 +79,13 @@ export const Navbar = () => {
                <Link class="nav-link" to="expense">
                 expense
               </Link>
+            </li>  
+            <li class="nav-item active">
+               <Link class="nav-link" to="usememo">
+                usememo
+              </Link>
             </li>   
+            
 
             
             
