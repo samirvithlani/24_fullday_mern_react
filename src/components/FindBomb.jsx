@@ -4,6 +4,7 @@ export const FindBomb = () => {
   const gridSize = 5; //25
   const totalTitle = gridSize * gridSize;
   const [clickedTitle, setclickedTitle] = useState([]);
+  const [isGameOver, setisGameOver] = useState(false)
 
   console.log("clicked....",clickedTitle)
 
@@ -17,7 +18,10 @@ export const FindBomb = () => {
     //push -->index..
     setclickedTitle([...clickedTitle,index]) //pushing clicked index in array
     if(index ==bombPos){
-        alert("game over...")
+        
+        setisGameOver(true)
+        //alert("game over...")
+        //window.location.reload()
     }
   }
 
@@ -49,11 +53,20 @@ export const FindBomb = () => {
                   backgroundColor:clickedTitle.includes(index)?"gray":"white",
                   cursor: "pointer",
                 }}
-              >{index+1}</div>
+              >
+                {
+                    isGameOver ? (index == bombPos && "💣") :index+1
+                }
+                
+              </div>
             );
           })
         }
       </div>
+      {
+        isGameOver &&  <button onClick={()=>{window.location.reload()}}>RESTART</button>
+      }
+      
     </div>
   );
 };
