@@ -31,6 +31,7 @@ import { DynamicForm } from './components/forms/DynamicForm'
 import { DynamicFrorm2 } from './components/forms/DynamicFrorm2'
 import { Expense } from './components/Expense'
 import { UseMemoDemo } from './components/UseMemoDemo'
+import { FindBomb } from './components/FindBomb'
 
 function App() {
 
@@ -55,6 +56,7 @@ function App() {
             <Route path='/dynamicform' element = {<DynamicFrorm2/>}></Route>
             <Route path='/expense' element = {<Expense/>}></Route>
             <Route path='/usememo' element = {<UseMemoDemo/>}></Route>
+            <Route path='/findbomb' element = {<FindBomb/>}></Route>
 
 
 

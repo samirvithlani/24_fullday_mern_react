@@ -85,6 +85,11 @@ export const Navbar = () => {
                 usememo
               </Link>
             </li>   
+            <li class="nav-item active">
+               <Link class="nav-link" to="findbomb">
+                find bomb
+              </Link>
+            </li>   
             
 
             
