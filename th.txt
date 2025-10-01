@@ -231,3 +231,5 @@ c --> spending list
 when user come first time or page refresh 1 bomb will generate between 1 to 25 -->userandomno
 when user select any numner for record store in array push using ... ooperator
 if random no genrated 20 and user press on 20 means bomb found and game over...
+
+useRef: dom -->element access -->ref -->without rerender

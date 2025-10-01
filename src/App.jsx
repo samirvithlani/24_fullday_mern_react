@@ -32,6 +32,8 @@ import { DynamicFrorm2 } from './components/forms/DynamicFrorm2'
 import { Expense } from './components/Expense'
 import { UseMemoDemo } from './components/UseMemoDemo'
 import { FindBomb } from './components/FindBomb'
+import { UseRefDemo1 } from './components/Netflix/UseRefDemo1'
+import { UseRefDemo2 } from './components/UseRefDemo2'
 
 function App() {
 
@@ -57,6 +59,7 @@ function App() {
             <Route path='/expense' element = {<Expense/>}></Route>
             <Route path='/usememo' element = {<UseMemoDemo/>}></Route>
             <Route path='/findbomb' element = {<FindBomb/>}></Route>
+            <Route path='/userefdemo' element ={<UseRefDemo2/>}></Route>
 
 
 
