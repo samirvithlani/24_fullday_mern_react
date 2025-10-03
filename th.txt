@@ -233,3 +233,60 @@ when user select any numner for record store in array push using ... ooperator
 if random no genrated 20 and user press on 20 means bomb found and game over...
 
 useRef: dom -->element access -->ref -->without rerender
+
+API CALLING:
+React js --frontend fw: database connec... -dynamic data -->
+
+Backend fw ->dynamic data provide:
+java  --> code --react run [no]
+php   -->code -->react run
+python --> code ->react run
+node --> code -->react run
+
+layer [service]
+
+backend -->[service]  frontend
+java  -->[API] -->react
+python -->[API] -->react
+
+application Programming interface
+
+backend dev frontend dev
+api produce   --> [service][api]api consume
+
+java only understands object...
+data type:
+xml -->files 
+JSON object -->
+
+API -->url -->json object
+
+goglle -->weather -->[api]third party -->
+
+zomato : map -->google map 
+google map api --> call -->response..
+-------------------------------------------
+
+https://node5.onrender.com/user/user :API 
+
+API CALL Packages:
+Fetch function --> javascript -->
+axios --> 3rd party function -->
+
+npm i axios
+
+api call -->time response==> traffic load,seerver slow,,
+Promise: response error
+fullfil, reject
+function -return Promise
+
+reslove -->Then
+reject --> catch
+
+then catch -->async await
+
+TASK:
+DATA -->Table formate..
+2)ApiTask1 ->https://dummyjson.com/products
+           --> prodycts[] ->id,title,category,price,rating [table]
+3)ApiTask2 -->https://dummyjson.com/todos all data in table fmt           
