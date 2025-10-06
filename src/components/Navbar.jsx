@@ -97,10 +97,16 @@ export const Navbar = () => {
               </Link>
             </li>    */}
             <li class="nav-item active">
+               <Link class="nav-link" to="useeffectdemo">
+                useeffectdemo
+              </Link>
+            </li>   
+            <li class="nav-item active">
                <Link class="nav-link" to="apidemo1">
                 apidemo1
               </Link>
             </li>   
+            
             
 
             

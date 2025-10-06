@@ -35,6 +35,7 @@ import { FindBomb } from './components/FindBomb'
 import { UseRefDemo1 } from './components/Netflix/UseRefDemo1'
 import { UseRefDemo2 } from './components/UseRefDemo2'
 import { ApiDemo1 } from './components/api/ApiDemo1'
+import { UseEffectDemo } from './components/UseEffectDemo'
 
 function App() {
 
@@ -61,6 +62,7 @@ function App() {
             <Route path='/usememo' element = {<UseMemoDemo/>}></Route>
             <Route path='/findbomb' element = {<FindBomb/>}></Route>
             <Route path='/userefdemo' element ={<UseRefDemo2/>}></Route>
+            <Route path='/useeffectdemo' element ={<UseEffectDemo/>}></Route>
             <Route path="/apidemo1" element = {<ApiDemo1/>}></Route>
 
 

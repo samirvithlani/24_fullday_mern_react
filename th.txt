@@ -290,3 +290,10 @@ DATA -->Table formate..
 2)ApiTask1 ->https://dummyjson.com/products
            --> prodycts[] ->id,title,category,price,rating [table]
 3)ApiTask2 -->https://dummyjson.com/todos all data in table fmt           
+
+
+
+constructor:
+useEffect: to handle side effect in react js we can use useEffect
+
+whatsapp: life cycle hook:
