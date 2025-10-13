@@ -2,6 +2,7 @@ import axios from 'axios'
 import React from 'react'
 import { useForm } from 'react-hook-form'
 import { useNavigate } from 'react-router-dom'
+import { toast } from 'react-toastify'
 
 export const AddUser = () => {
     const{register,handleSubmit}=useForm()
@@ -15,7 +16,8 @@ export const AddUser = () => {
 
         const res = await axios.post("https://node5.onrender.com/user/user",data)
         if(res.status==201){
-            alert("user added successfully !!!")
+            //alert("user added successfully !!!")
+            toast.success("user added successfully!!")
             navigate("/apidemo1")
         }
     }
