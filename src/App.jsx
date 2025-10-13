@@ -36,6 +36,8 @@ import { UseRefDemo1 } from './components/Netflix/UseRefDemo1'
 import { UseRefDemo2 } from './components/UseRefDemo2'
 import { ApiDemo1 } from './components/api/ApiDemo1'
 import { UseEffectDemo } from './components/UseEffectDemo'
+import { ApiDemo2 } from './components/api/ApiDemo2'
+import { AddUser } from './components/api/AddUser'
 
 function App() {
 
@@ -64,6 +66,8 @@ function App() {
             <Route path='/userefdemo' element ={<UseRefDemo2/>}></Route>
             <Route path='/useeffectdemo' element ={<UseEffectDemo/>}></Route>
             <Route path="/apidemo1" element = {<ApiDemo1/>}></Route>
+            <Route path="/apidemo2" element = {<ApiDemo2/>}></Route>
+            <Route path='/adduser'element ={<AddUser/>}></Route>
 
 
 
