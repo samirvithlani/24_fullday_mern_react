@@ -297,3 +297,34 @@ constructor:
 useEffect: to handle side effect in react js we can use useEffect
 
 whatsapp: life cycle hook:
+
+
+
+HANDLESUBMIT(cb) -->{
+
+  states --> "name"
+  var obejct = {"name":oninpy event data..}
+
+  cb(object)
+
+}
+
+
+{required:{value:true,message:"name is required*"}}
+emailValidator:{
+            required:{
+                value:true,
+                message:"email is required"
+            }
+
+
+update api:
+update tablename set.... where id =?
+
+update button -->edituser -->which user --
+
+>apidemo -->id -->url -->
+apidemo -->list --> map --> update --> editComponent --> url -->
+edit Get --> default value api call old data default value ma set 
+
+-->form submit  --> delete _id --> submit --> put..

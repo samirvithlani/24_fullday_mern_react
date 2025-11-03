@@ -41,6 +41,7 @@ export const FormDemo3 = () => {
                 message:"hobbies are required*"
             },
             validate:(params)=>{
+                //array
                 return params?.length>1 || "min 2 hobbies are required *"
             }
         }

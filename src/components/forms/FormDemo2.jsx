@@ -10,6 +10,7 @@ export const FormDemo2 = () => {
     }
 
     const validationSchema = {
+
         emailValidator:{
             required:{
                 value:true,
