@@ -328,3 +328,6 @@ apidemo -->list --> map --> update --> editComponent --> url -->
 edit Get --> default value api call old data default value ma set 
 
 -->form submit  --> delete _id --> submit --> put..
+
+button click --> function -->id --> api --->data ->useState --> setShow(true)
+model -->return -->

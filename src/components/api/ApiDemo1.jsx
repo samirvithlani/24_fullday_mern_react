@@ -62,6 +62,7 @@ export const ApiDemo1 = () => {
                         <td>
                           <button onClick={()=>{deleteUser(user._id)}} className="btn btn-danger">DELETE</button>
                           <Link to={`/edituser/${user._id}`} className="btn btn-warning">UPDATE</Link>
+                          <button onClick={()=>{}} className="btn btn-info">INFO</button>
                         </td>
                     </tr>
                 })
