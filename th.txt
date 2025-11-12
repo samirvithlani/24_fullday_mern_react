@@ -331,3 +331,14 @@ edit Get --> default value api call old data default value ma set
 
 button click --> function -->id --> api --->data ->useState --> setShow(true)
 model -->return -->
+
+API DEMO 1
+
+input type text
+onchange -->functin -->value --> api
+https://node5.onrender.com/user/filter2?name=radha : []
+setuser(res.data.data)
+
+paid api -->
+1 call cost -> 10 paise Ahmedabad -- 1 rs
+debounce query

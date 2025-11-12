@@ -7,6 +7,20 @@ export const ApiDemo1 = () => {
   const [message, setmessage] = useState("");
   const [users, setusers] = useState([]);
   const [isLoading, setisLoading] = useState(false)
+  const [query, setquery] = useState("") //radha
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      //"r"
+        if(query.trim()!==""){
+          searchByName(query)
+        }
+        
+    },500);
+    
+  }, [query])
+  
+
   const getApiCall = async () => {
     //json..
     setisLoading(true)
@@ -31,6 +45,13 @@ export const ApiDemo1 = () => {
         getApiCall()
       } 
   }
+  
+  const searchByName = async(param)=>{
+    
+    //alert("ok")
+    const res = await axios.get(`https://node5.onrender.com/user/filter2?name=${param}`)
+    setusers(res.data.data)
+  }
   return (
     <div>
       <h1>API DEMO 1</h1>
@@ -39,6 +60,11 @@ export const ApiDemo1 = () => {
       {
         isLoading == true && <Loader/>
       }
+      <div>
+        <label>SEARCH</label>
+        {/* <input type="text" placeholder="enter name to search" onChange={(event)=>{searchByName(event.target.value)}}></input> */}
+        <input type="text" placeholder="enter name to search" onChange={(event)=>{setquery(event.target.value)}}></input>
+      </div>
       <table className="table table-dark">
         <thead>
           <tr>
