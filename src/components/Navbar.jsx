@@ -1,13 +1,21 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
+import { ThemeContext } from "../ThemeContext";
 
 export const Navbar = () => {
+  const {theme, settheme} = useContext(ThemeContext)
   return (
     <div>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="#">
           REACT
         </a>
+        {/* <button onClick={()=>{settheme("dark")}} >
+          CHNAGE THEME
+        </button> */}
+        <button onClick={()=>{settheme(theme=="light"?"dark":"light")}} >
+          CHNAGE THEME {theme == "light"?"dark":"light"}
+        </button>
       
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
