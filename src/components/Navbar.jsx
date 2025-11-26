@@ -116,6 +116,11 @@ export const Navbar = () => {
                 add user
               </Link>
             </li>   
+            <li class="nav-item active">
+               <Link class="nav-link" to="/employees">
+                Employees
+              </Link>
+            </li>   
             
             
 

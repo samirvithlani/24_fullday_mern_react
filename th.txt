@@ -342,3 +342,22 @@ setuser(res.data.data)
 paid api -->
 1 call cost -> 10 paise Ahmedabad -- 1 rs
 debounce query
+
+PROPS:
+
+A -> B  == a-->data -->b
+A -> B ->C  == a-->data -->b ___> c
+      props drilling
+
+A --> B -->C
+
+Context-API
+
+warehouse:
+
+Swiggy fact : Swiggy warehouse - customer ,,,,,,,,,,
+
+pipeline 
+
+
+

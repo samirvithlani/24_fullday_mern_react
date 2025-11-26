@@ -40,6 +40,8 @@ import { ApiDemo2 } from "./components/api/ApiDemo2";
 import { AddUser } from "./components/api/AddUser";
 import { ToastContainer, Zoom } from "react-toastify";
 import { EditUser } from "./components/api/EditUser";
+import FirstPageAnimation from "./components/FirstPageAnimation";
+import { EmployeeList } from "./components/employees/EmployeeList";
 
 function App() {
   var title = "REACT JS";
@@ -83,6 +85,8 @@ function App() {
         <Route path="/apidemo2" element={<ApiDemo2 />}></Route>
         <Route path="/adduser" element={<AddUser />}></Route>
         <Route path="/edituser/:id"element = {<EditUser/>}></Route>
+        <Route path="/firstpage" element = {<FirstPageAnimation/>}></Route>
+        <Route path="/employees"element = {<EmployeeList/>}></Route>
         {/* <Route path='/*' element = {<h2>NO FOUND</h2>}></Route> */}
         <Route path="/*" element={<Erorr404 />}></Route>
       </Routes>
