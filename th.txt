@@ -360,4 +360,9 @@ Swiggy fact : Swiggy warehouse - customer ,,,,,,,,,,
 pipeline 
 
 
+navbar dropdown : select your mood today : --> jooly,sad,...
+switch case array
+
+
+
 
