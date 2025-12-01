@@ -1,0 +1,28 @@
+.emoji-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  pointer-events: none;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.emoji {
+  position: absolute;
+  top: -20px;
+  /* CHANGE THIS LINE */
+  left: calc(100% * var(--x)); 
+  font-size: 30px;
+  animation: fall 5s linear forwards;
+}
+
+/* Falling effect */
+@keyframes fall {
+  from {
+    transform: translateY(-50px) rotate(0deg);
+  }
+  to {
+    transform: translateY(100vh) rotate(360deg);
+  }
+}

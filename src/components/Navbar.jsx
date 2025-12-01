@@ -1,9 +1,13 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { ThemeContext } from "../ThemeContext";
+import { EmojiContext } from "../EmojiContext";
+
 
 export const Navbar = () => {
   const {theme, settheme} = useContext(ThemeContext)
+  const {changeEmoji,emoji} =useContext(EmojiContext)
+  console.log(changeEmoji,emoji)
   return (
     <div>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -16,6 +20,12 @@ export const Navbar = () => {
         <button onClick={()=>{settheme(theme=="light"?"dark":"light")}} >
           CHNAGE THEME {theme == "light"?"dark":"light"}
         </button>
+        <p>{emoji}</p>
+        <ul>
+          <li><button onClick={()=>{changeEmoji("😭")}}>😭</button></li>
+          <li><button onClick={()=>{changeEmoji("😢")}}>😢</button></li>
+          
+        </ul>
       
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
 

@@ -43,59 +43,93 @@ import { EditUser } from "./components/api/EditUser";
 import FirstPageAnimation from "./components/FirstPageAnimation";
 import { EmployeeList } from "./components/employees/EmployeeList";
 import { ThemeContext } from "./ThemeContext";
+import { EmojiContext } from "./EmojiContext";
+import { EmojiFall } from "./components/EmojiFall";
+
 
 function App() {
   var title = "REACT JS";
 
-  const [theme, settheme] = useState("light")
+  const [theme, settheme] = useState("light");
+
+  const [emoji, setemoji] = useState("😊");
+  const [triggerFall, settriggerFall] = useState(false);
+
+  const startFall = () => {
+    settriggerFall(true);
+    setTimeout(() => {
+      settriggerFall(false);
+    }, 5000);
+  };
+  const changeEmoji = (newEmoji) => {
+    setemoji(newEmoji);
+    startFall();
+  };
+
   return (
     <div style={{ textAlign: "center" }}>
-      <ThemeContext.Provider value={{theme,settheme}}>
-        <div style={{backgroundColor:theme =="light"?"white":"black",color:theme=="light"?"black":"white",minHeight:"500px"}}>
-        <ToastContainer
-          position="top-center"
-          autoClose={5000}
-          hideProgressBar={false}
-          newestOnTop={false}
-          closeOnClick={false}
-          rtl={false}
-          pauseOnFocusLoss
-          draggable
-          pauseOnHover
-          theme="dark"
-          transition={Zoom}
-        />
-        <Navbar></Navbar>
-        <Routes>
-          <Route path="/" element={<Students />}></Route>
-          <Route path="/netflixhome" element={<NetflixHome />}></Route>
-          <Route path="/netflixmovies" element={<NetflixMovies />}></Route>
-          <Route path="/netflixshows" element={<NetflixShows />}></Route>
-          <Route path="/watch/:name" element={<WatchContent />}></Route>
-          <Route path="/inputdemo1" element={<InputHandlinfDemo1 />}></Route>
-          <Route path="/formdemo1" element={<FormDemo1 />}></Route>
-          <Route path="/formdemo2" element={<FormDemo2 />}></Route>
-          <Route path="/formdemo3" element={<FormDemo3></FormDemo3>}></Route>
-          <Route path="/formdemo4" element={<FormDemo4 />}></Route>
-          <Route path="/booklist" element={<BookList />}></Route>
-          <Route path="/mobilelist" element={<MobileList />}></Route>
-          <Route path="/dynamicform" element={<DynamicFrorm2 />}></Route>
-          <Route path="/expense" element={<Expense />}></Route>
-          <Route path="/usememo" element={<UseMemoDemo />}></Route>
-          <Route path="/findbomb" element={<FindBomb />}></Route>
-          <Route path="/userefdemo" element={<UseRefDemo2 />}></Route>
-          <Route path="/useeffectdemo" element={<UseEffectDemo />}></Route>
-          <Route path="/apidemo1" element={<ApiDemo1 />}></Route>
-          <Route path="/apidemo2" element={<ApiDemo2 />}></Route>
-          <Route path="/adduser" element={<AddUser />}></Route>
-          <Route path="/edituser/:id" element={<EditUser />}></Route>
-          <Route path="/firstpage" element={<FirstPageAnimation />}></Route>
-          <Route path="/employees" element={<EmployeeList />}></Route>
-          {/* <Route path='/*' element = {<h2>NO FOUND</h2>}></Route> */}
-          <Route path="/*" element={<Erorr404 />}></Route>
-        </Routes>
-        </div>
-      </ThemeContext.Provider>
+      
+      <EmojiContext.Provider value={{changeEmoji,emoji,startFall,triggerFall}}>
+        <EmojiFall></EmojiFall>
+        <ThemeContext.Provider value={{ theme, settheme }}>
+          <div
+            style={{
+              backgroundColor: theme == "light" ? "white" : "black",
+              color: theme == "light" ? "black" : "white",
+              minHeight: "500px",
+            }}
+          >
+            <ToastContainer
+              position="top-center"
+              autoClose={5000}
+              hideProgressBar={false}
+              newestOnTop={false}
+              closeOnClick={false}
+              rtl={false}
+              pauseOnFocusLoss
+              draggable
+              pauseOnHover
+              theme="dark"
+              transition={Zoom}
+            />
+            <Navbar></Navbar>
+            <Routes>
+              <Route path="/" element={<Students />}></Route>
+              <Route path="/netflixhome" element={<NetflixHome />}></Route>
+              <Route path="/netflixmovies" element={<NetflixMovies />}></Route>
+              <Route path="/netflixshows" element={<NetflixShows />}></Route>
+              <Route path="/watch/:name" element={<WatchContent />}></Route>
+              <Route
+                path="/inputdemo1"
+                element={<InputHandlinfDemo1 />}
+              ></Route>
+              <Route path="/formdemo1" element={<FormDemo1 />}></Route>
+              <Route path="/formdemo2" element={<FormDemo2 />}></Route>
+              <Route
+                path="/formdemo3"
+                element={<FormDemo3></FormDemo3>}
+              ></Route>
+              <Route path="/formdemo4" element={<FormDemo4 />}></Route>
+              <Route path="/booklist" element={<BookList />}></Route>
+              <Route path="/mobilelist" element={<MobileList />}></Route>
+              <Route path="/dynamicform" element={<DynamicFrorm2 />}></Route>
+              <Route path="/expense" element={<Expense />}></Route>
+              <Route path="/usememo" element={<UseMemoDemo />}></Route>
+              <Route path="/findbomb" element={<FindBomb />}></Route>
+              <Route path="/userefdemo" element={<UseRefDemo2 />}></Route>
+              <Route path="/useeffectdemo" element={<UseEffectDemo />}></Route>
+              <Route path="/apidemo1" element={<ApiDemo1 />}></Route>
+              <Route path="/apidemo2" element={<ApiDemo2 />}></Route>
+              <Route path="/adduser" element={<AddUser />}></Route>
+              <Route path="/edituser/:id" element={<EditUser />}></Route>
+              <Route path="/firstpage" element={<FirstPageAnimation />}></Route>
+              <Route path="/employees" element={<EmployeeList />}></Route>
+              {/* <Route path='/*' element = {<h2>NO FOUND</h2>}></Route> */}
+              <Route path="/*" element={<Erorr404 />}></Route>
+            </Routes>
+          </div>
+        </ThemeContext.Provider>
+      </EmojiContext.Provider>
     </div>
   );
 }
