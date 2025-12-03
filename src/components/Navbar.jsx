@@ -139,6 +139,11 @@ export const Navbar = () => {
                 Employees
               </Link>
             </li>   
+            <li class="nav-item active">
+               <Link class="nav-link" to="/muidemo2">
+                MUI DMEO 2
+              </Link>
+            </li>   
             
             
 

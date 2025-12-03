@@ -45,6 +45,8 @@ import { EmployeeList } from "./components/employees/EmployeeList";
 import { ThemeContext } from "./ThemeContext";
 import { EmojiContext } from "./EmojiContext";
 import { EmojiFall } from "./components/EmojiFall";
+import { MuiDemo1 } from "./components/mui/MuiDemo1";
+import { MuiDemo2 } from "./components/mui/MuiDemo2";
 
 
 function App() {
@@ -124,6 +126,10 @@ function App() {
               <Route path="/edituser/:id" element={<EditUser />}></Route>
               <Route path="/firstpage" element={<FirstPageAnimation />}></Route>
               <Route path="/employees" element={<EmployeeList />}></Route>
+              <Route path = "/muidemo1" element = {<MuiDemo1/>}></Route>
+              <Route path = "/muidemo2" element = {<MuiDemo2/>}></Route>
+              
+              
               {/* <Route path='/*' element = {<h2>NO FOUND</h2>}></Route> */}
               <Route path="/*" element={<Erorr404 />}></Route>
             </Routes>
