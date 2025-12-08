@@ -47,6 +47,7 @@ import { EmojiContext } from "./EmojiContext";
 import { EmojiFall } from "./components/EmojiFall";
 import { MuiDemo1 } from "./components/mui/MuiDemo1";
 import { MuiDemo2 } from "./components/mui/MuiDemo2";
+import { Products } from "./components/Products";
 
 
 function App() {
@@ -128,6 +129,7 @@ function App() {
               <Route path="/employees" element={<EmployeeList />}></Route>
               <Route path = "/muidemo1" element = {<MuiDemo1/>}></Route>
               <Route path = "/muidemo2" element = {<MuiDemo2/>}></Route>
+              <Route path ="/products" element = {<Products/>}></Route>
               
               
               {/* <Route path='/*' element = {<h2>NO FOUND</h2>}></Route> */}

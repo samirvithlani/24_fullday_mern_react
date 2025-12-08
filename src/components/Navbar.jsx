@@ -144,6 +144,11 @@ export const Navbar = () => {
                 MUI DMEO 2
               </Link>
             </li>   
+            <li class="nav-item active">
+               <Link class="nav-link" to="/products">
+                PRODUCTS
+              </Link>
+            </li>   
             
             
 

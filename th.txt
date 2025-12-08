@@ -379,5 +379,31 @@ start value 100 end value 1000
 Raitings:
 Hover feedback
 
+REDUX:
+1 comp --> 2comp 
+props : parent component  --> child component
+      : a-->b-->c props drilling
+context : parent child..
+redux  : state management library :
 
+context : small application: comm
+large : banking ott : redux
+
+action: js function: add to cart.
+reducer: reducer will have current state and return updated state
+store: warehouse
+
+a --> store <<---- b ,c,d
+
+npm install @reduxjs/toolkit
+npm install react-redux
+
+
+navbar   -->links   --->redux
+products -- >10     --> 
+
+
+create store.
+
+main.js -->store-->reducers -->cartReeducer --> cart --[]
 
