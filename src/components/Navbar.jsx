@@ -11,6 +11,7 @@ export const Navbar = () => {
   //const state = useSelector((state)=>state) state..
   //const state = useSelector((state)=>state.cart) state.reducerName
   const cartState = useSelector((state)=>state.cart.cart)// objecct
+  const balance = useSelector((state)=>state.bank.balance)
 
   console.log("cart...",cartState) //cart
   console.log(changeEmoji,emoji)
@@ -155,8 +156,16 @@ export const Navbar = () => {
                 PRODUCTS
               </Link>
             </li>   
+            <li class="nav-item active">
+               <Link class="nav-link" to="/bank">
+                BANK
+              </Link>
+            </li>   
             <li className="nav-item">
               <h1>{cartState?.length}</h1>
+            </li>
+            <li className="nav-item">
+              <h1>{balance}</h1>
             </li>
             
             
