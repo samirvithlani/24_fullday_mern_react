@@ -2,11 +2,17 @@ import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { ThemeContext } from "../ThemeContext";
 import { EmojiContext } from "../EmojiContext";
+import { useSelector } from "react-redux";
 
 
 export const Navbar = () => {
   const {theme, settheme} = useContext(ThemeContext)
   const {changeEmoji,emoji} =useContext(EmojiContext)
+  //const state = useSelector((state)=>state) state..
+  //const state = useSelector((state)=>state.cart) state.reducerName
+  const cartState = useSelector((state)=>state.cart.cart)// objecct
+
+  console.log("cart...",cartState) //cart
   console.log(changeEmoji,emoji)
   return (
     <div>
@@ -149,6 +155,9 @@ export const Navbar = () => {
                 PRODUCTS
               </Link>
             </li>   
+            <li className="nav-item">
+              <h1>{cartState?.length}</h1>
+            </li>
             
             
 

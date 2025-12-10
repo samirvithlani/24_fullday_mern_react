@@ -11,7 +11,11 @@ const cartSlice = createSlice({
         //actions --> js function
         addToCart :(state,action)=>{
             console.log(state) //state --> initailState object state == cart
-            console.log(action)
+            //action -- type,payload
+            console.log(action) //action payload
+            //state.cart - []
+            //action.payload = {}
+            state.cart.push(action.payload)
         }
 
     }
