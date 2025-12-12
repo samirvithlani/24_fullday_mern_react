@@ -407,5 +407,6 @@ create store.
 
 main.js -->store-->reducers -->cartReeducer --> cart --[]
 
-
+API REDUX:
+redux middleware asyncthunk
 

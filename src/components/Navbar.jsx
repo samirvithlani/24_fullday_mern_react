@@ -161,6 +161,11 @@ export const Navbar = () => {
                 BANK
               </Link>
             </li>   
+            <li class="nav-item active">
+               <Link class="nav-link" to="/content2">
+                content2
+              </Link>
+            </li>   
             <li className="nav-item">
               <h1>{cartState?.length}</h1>
             </li>

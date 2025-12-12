@@ -49,6 +49,7 @@ import { MuiDemo1 } from "./components/mui/MuiDemo1";
 import { MuiDemo2 } from "./components/mui/MuiDemo2";
 import { Products } from "./components/Products";
 import { BankComponent } from "./components/BankComponent";
+import { Content2Component } from "./components/Content2Component";
 
 
 function App() {
@@ -132,6 +133,7 @@ function App() {
               <Route path = "/muidemo2" element = {<MuiDemo2/>}></Route>
               <Route path ="/products" element = {<Products/>}></Route>
               <Route path="/bank" element = {<BankComponent/>}></Route>
+              <Route path="/content2" element = {<Content2Component/>}></Route>
               
               
               {/* <Route path='/*' element = {<h2>NO FOUND</h2>}></Route> */}
